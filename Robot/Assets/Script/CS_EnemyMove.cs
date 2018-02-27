@@ -6,9 +6,9 @@ public class CS_EnemyMove : MonoBehaviour
 {
     private bool visible;
     public float rotateSpeed = 3f;
-    private float playerDistance, x = 0.3f, time = 0f, changeTime = 2f, bulletSpeed = 120f;
+    private float playerDistance, time = 0f, fireTime, bulletSpeed = 120f;
     Vector3 movePoint, currentPoint, speed, playerSpeedCurrent, playerSpeedBefore, playerSpeedAfter;
-    public GameObject bullet;
+    public GameObject bullet, explosion;
     private GameObject player, cursor;
 
     private void Awake()
@@ -22,6 +22,7 @@ public class CS_EnemyMove : MonoBehaviour
     {
         playerSpeedBefore = player.transform.position;
         movePoint = new Vector3(Random.Range(-50, 50), Random.Range(50, 50), Random.Range(50, 50));
+        fireTime = Random.Range(0.75f, 1.5f);
     }
 
     // Update is called once per frame
@@ -54,10 +55,11 @@ public class CS_EnemyMove : MonoBehaviour
         playerDistance = Vector3.Distance(transform.position, player.transform.position);
         playerSpeedAfter = player.transform.position + playerSpeedCurrent * playerDistance / bulletSpeed / Time.deltaTime;
 
-        if (time > changeTime)
+        if (time > fireTime)
         {
             GameObject recentBullet = Instantiate(bullet, this.transform.position, new Quaternion(0, 0, 0, 0)) as GameObject;
             recentBullet.GetComponent<CS_EnemyBulletMove>().playerPosition = playerSpeedAfter;
+            fireTime = Random.Range(0.75f, 1.5f);
             //recentBullet.GetComponent<Rigidbody>().AddForce(recentBullet.transform.forward * bulletSpeed, ForceMode.Impulse);
 
             time = 0f;
@@ -67,15 +69,18 @@ public class CS_EnemyMove : MonoBehaviour
     //弾が当たったら
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("hit");
-        /*if(this.gameObject == player.GetComponent<CS_PlayerController>().target)
+        if(other.gameObject.tag == "PlayerBullet")
         {
-            player.GetComponent<CS_PlayerController>().isTarget = false;
-            player.GetComponent<CS_PlayerController>().target = null;
-            cursor.GetComponent<CS_CursorMove>().setCursorNettral();
-        }
+            if (this.gameObject == player.GetComponent<CS_PlayerController>().target)
+            {
+                player.GetComponent<CS_PlayerController>().isTarget = false;
+                player.GetComponent<CS_PlayerController>().target = null;
+                cursor.GetComponent<CS_CursorMove>().setCursorNettral();
+            }
 
-        Destroy(this.gameObject);*/
+            Instantiate(explosion, transform.position, transform.rotation);
+            Destroy(this.gameObject);
+        }
     }
 
     //カメラに写ったら
