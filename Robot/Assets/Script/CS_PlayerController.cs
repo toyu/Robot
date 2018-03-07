@@ -5,9 +5,9 @@ using System.Linq;
 using System.Runtime.InteropServices;
 
 public class CS_PlayerController : MonoBehaviour {
+    public int hp;
     public float speed, rotateSpeed, lockonMaxDistance ,x ,y, z;
-    public GameObject bullet;
-    public GameObject target, cursor;
+    public GameObject target, cursor, bullet;
     public bool isTarget = false;
 
     // Use this for initialization
@@ -116,6 +116,11 @@ public class CS_PlayerController : MonoBehaviour {
                 }
             }
         }
+
+        if(hp < 1)
+        {
+            GameObject.Find("SceneManager").GetComponent<CS_SceneManager>().LoadScene("GameOver");
+        }
     }
 
     // ロックオン対象の敵を取得////////////////////////////////////////////////////////////////////////////////////
@@ -175,6 +180,6 @@ public class CS_PlayerController : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("hit");
+        hp -= 1;
     }
 }

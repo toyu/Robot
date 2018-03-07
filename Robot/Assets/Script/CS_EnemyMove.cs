@@ -5,23 +5,24 @@ using UnityEngine;
 public class CS_EnemyMove : MonoBehaviour
 {
     private bool visible;
-    public float rotateSpeed = 3f;
+    public float rotateSpeed = 3f, moveRange = 100f;
     private float playerDistance, time = 0f, fireTime, bulletSpeed = 120f;
     Vector3 movePoint, currentPoint, speed, playerSpeedCurrent, playerSpeedBefore, playerSpeedAfter;
     public GameObject bullet, explosion;
-    private GameObject player, cursor;
+    private GameObject player, cursor, gameManager;
 
     private void Awake()
     {
         player = GameObject.Find("unitychan");
         cursor = GameObject.Find("Cursor");
+        gameManager = GameObject.Find("GameManager");
     }
 
     // Use this for initialization
     void Start()
     {
         playerSpeedBefore = player.transform.position;
-        movePoint = new Vector3(Random.Range(-50, 50), Random.Range(50, 50), Random.Range(50, 50));
+        movePoint = new Vector3(Random.Range(-moveRange, moveRange), Random.Range(-moveRange, moveRange), Random.Range(-moveRange, moveRange));
         fireTime = Random.Range(0.75f, 1.5f);
     }
 
@@ -35,8 +36,7 @@ public class CS_EnemyMove : MonoBehaviour
 
         if (Vector3.Distance(transform.position, movePoint) < 10f)
         {
-            Debug.Log("goal");
-            movePoint = new Vector3(Random.Range(-50, 50), Random.Range(-50, 50), Random.Range(-50, 50));
+            movePoint = new Vector3(Random.Range(-moveRange, moveRange), Random.Range(-moveRange, moveRange), Random.Range(-moveRange, moveRange));
         }
 
         //Debug.Log(movePoint);
@@ -69,6 +69,8 @@ public class CS_EnemyMove : MonoBehaviour
     //弾が当たったら
     private void OnTriggerEnter(Collider other)
     {
+        Vector3 paticleAngle;
+
         if(other.gameObject.tag == "PlayerBullet")
         {
             if (this.gameObject == player.GetComponent<CS_PlayerController>().target)
@@ -78,7 +80,14 @@ public class CS_EnemyMove : MonoBehaviour
                 cursor.GetComponent<CS_CursorMove>().setCursorNettral();
             }
 
-            Instantiate(explosion, transform.position, transform.rotation);
+            paticleAngle = new Vector3(0, Random.Range(0f, 179f), Random.Range(0f, 179f));
+            Instantiate(explosion, transform.position, Quaternion.Euler(paticleAngle));
+
+            paticleAngle.y += 180f;
+            paticleAngle.z += 180f;
+            Instantiate(explosion, transform.position, Quaternion.Euler(paticleAngle));
+
+            gameManager.GetComponent<CS_GameManager>().enemyNum--;
             Destroy(this.gameObject);
         }
     }
