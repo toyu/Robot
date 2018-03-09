@@ -16,7 +16,7 @@ public class CS_Timer : MonoBehaviour {
 	void Update () {
         if(timeCounter <= 1.0f && timeCounter >0.0f)
         {
-            this.GetComponent<Text>().text = "Start!!";
+            this.GetComponent<Text>().text = "作戦開始";
         }
         else if(timeCounter <= 0.0f)
         {
