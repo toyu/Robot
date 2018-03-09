@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 039fd4e4e7ac03d458529bf757c3d225
+timeCreated: 1520542711
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: RoboTestModel_0001:arm1A
+    100004: RoboTestModel_0001:arm1A 1
+    100006: RoboTestModel_0001:arm1B
+    100008: RoboTestModel_0001:arm1B 1
+    100010: RoboTestModel_0001:arm2
+    100012: RoboTestModel_0001:arm2 1
+    100014: RoboTestModel_0001:armJoint
+    100016: RoboTestModel_0001:armJoint1
+    100018: RoboTestModel_0001:armL
+    100020: RoboTestModel_0001:armR
+    100022: RoboTestModel_0001:back
+    100024: RoboTestModel_0001:ban
+    100026: RoboTestModel_0001:ban1
+    100028: RoboTestModel_0001:body
+    100030: RoboTestModel_0001:elbowA
+    100032: RoboTestModel_0001:elbowA 1
+    100034: RoboTestModel_0001:elbowB
+    100036: RoboTestModel_0001:elbowB 1
+    100038: RoboTestModel_0001:elbowJoint
+    100040: RoboTestModel_0001:elbowJoint 1
+    100042: RoboTestModel_0001:elbowL
+    100044: RoboTestModel_0001:elbowR
+    100046: RoboTestModel_0001:foot
+    100048: RoboTestModel_0001:foot 1
+    100050: RoboTestModel_0001:footJointL
+    100052: RoboTestModel_0001:footJointR
+    100054: RoboTestModel_0001:footL
+    100056: RoboTestModel_0001:footR
+    100058: RoboTestModel_0001:hand
+    100060: RoboTestModel_0001:hand 1
+    100062: RoboTestModel_0001:handJoint
+    100064: RoboTestModel_0001:handJoint1
+    100066: RoboTestModel_0001:handL
+    100068: RoboTestModel_0001:handR
+    100070: RoboTestModel_0001:head
+    100072: RoboTestModel_0001:heel
+    100074: RoboTestModel_0001:heel 1
+    100076: RoboTestModel_0001:knee
+    100078: RoboTestModel_0001:knee 1
+    100080: RoboTestModel_0001:kneeJoint
+    100082: RoboTestModel_0001:kneeJoint 1
+    100084: RoboTestModel_0001:kneeL
+    100086: RoboTestModel_0001:kneeR
+    100088: RoboTestModel_0001:leg
+    100090: RoboTestModel_0001:leg 1
+    100092: RoboTestModel_0001:pCube1
+    100094: RoboTestModel_0001:pCylinder1
+    100096: RoboTestModel_0001:pPipe1
+    100098: RoboTestModel_0001:pPipe1 1
+    100100: RoboTestModel_0001:RoboTest:AssaultRifle:RifleAddons
+    100102: RoboTestModel_0001:RoboTest:AssaultRifle:RifleBody
+    100104: RoboTestModel_0001:RoboTest:AssaultRifle:RifleGrip
+    100106: RoboTestModel_0001:RoboTest:group3
+    100108: RoboTestModel_0001:RoboTest:left
+    100110: RoboTestModel_0001:shoulderAL
+    100112: RoboTestModel_0001:shoulderAR
+    100114: RoboTestModel_0001:shoulderBL
+    100116: RoboTestModel_0001:shoulderBR
+    100118: RoboTestModel_0001:shoulderJointA
+    100120: RoboTestModel_0001:shoulderJointA1
+    100122: RoboTestModel_0001:shoulderJointB
+    100124: RoboTestModel_0001:shoulderJointB1
+    100126: RoboTestModel_0001:shoulderL
+    100128: RoboTestModel_0001:shoulderR
+    100130: RoboTestModel_0001:thighJointL
+    100132: RoboTestModel_0001:thighJointR
+    100134: RoboTestModel_0001:thighL
+    100136: RoboTestModel_0001:thighL 1
+    100138: RoboTestModel_0001:thighR
+    100140: RoboTestModel_0001:thighR 1
+    400000: //RootNode
+    400002: RoboTestModel_0001:arm1A
+    400004: RoboTestModel_0001:arm1A 1
+    400006: RoboTestModel_0001:arm1B
+    400008: RoboTestModel_0001:arm1B 1
+    400010: RoboTestModel_0001:arm2
+    400012: RoboTestModel_0001:arm2 1
+    400014: RoboTestModel_0001:armJoint
+    400016: RoboTestModel_0001:armJoint1
+    400018: RoboTestModel_0001:armL
+    400020: RoboTestModel_0001:armR
+    400022: RoboTestModel_0001:back
+    400024: RoboTestModel_0001:ban
+    400026: RoboTestModel_0001:ban1
+    400028: RoboTestModel_0001:body
+    400030: RoboTestModel_0001:elbowA
+    400032: RoboTestModel_0001:elbowA 1
+    400034: RoboTestModel_0001:elbowB
+    400036: RoboTestModel_0001:elbowB 1
+    400038: RoboTestModel_0001:elbowJoint
+    400040: RoboTestModel_0001:elbowJoint 1
+    400042: RoboTestModel_0001:elbowL
+    400044: RoboTestModel_0001:elbowR
+    400046: RoboTestModel_0001:foot
+    400048: RoboTestModel_0001:foot 1
+    400050: RoboTestModel_0001:footJointL
+    400052: RoboTestModel_0001:footJointR
+    400054: RoboTestModel_0001:footL
+    400056: RoboTestModel_0001:footR
+    400058: RoboTestModel_0001:hand
+    400060: RoboTestModel_0001:hand 1
+    400062: RoboTestModel_0001:handJoint
+    400064: RoboTestModel_0001:handJoint1
+    400066: RoboTestModel_0001:handL
+    400068: RoboTestModel_0001:handR
+    400070: RoboTestModel_0001:head
+    400072: RoboTestModel_0001:heel
+    400074: RoboTestModel_0001:heel 1
+    400076: RoboTestModel_0001:knee
+    400078: RoboTestModel_0001:knee 1
+    400080: RoboTestModel_0001:kneeJoint
+    400082: RoboTestModel_0001:kneeJoint 1
+    400084: RoboTestModel_0001:kneeL
+    400086: RoboTestModel_0001:kneeR
+    400088: RoboTestModel_0001:leg
+    400090: RoboTestModel_0001:leg 1
+    400092: RoboTestModel_0001:pCube1
+    400094: RoboTestModel_0001:pCylinder1
+    400096: RoboTestModel_0001:pPipe1
+    400098: RoboTestModel_0001:pPipe1 1
+    400100: RoboTestModel_0001:RoboTest:AssaultRifle:RifleAddons
+    400102: RoboTestModel_0001:RoboTest:AssaultRifle:RifleBody
+    400104: RoboTestModel_0001:RoboTest:AssaultRifle:RifleGrip
+    400106: RoboTestModel_0001:RoboTest:group3
+    400108: RoboTestModel_0001:RoboTest:left
+    400110: RoboTestModel_0001:shoulderAL
+    400112: RoboTestModel_0001:shoulderAR
+    400114: RoboTestModel_0001:shoulderBL
+    400116: RoboTestModel_0001:shoulderBR
+    400118: RoboTestModel_0001:shoulderJointA
+    400120: RoboTestModel_0001:shoulderJointA1
+    400122: RoboTestModel_0001:shoulderJointB
+    400124: RoboTestModel_0001:shoulderJointB1
+    400126: RoboTestModel_0001:shoulderL
+    400128: RoboTestModel_0001:shoulderR
+    400130: RoboTestModel_0001:thighJointL
+    400132: RoboTestModel_0001:thighJointR
+    400134: RoboTestModel_0001:thighL
+    400136: RoboTestModel_0001:thighL 1
+    400138: RoboTestModel_0001:thighR
+    400140: RoboTestModel_0001:thighR 1
+    2000000: RoboTestModel_0001:back
+    2000002: RoboTestModel_0001:RoboTest:left
+    2100000: phong1
+    2100002: lambert3
+    2100004: lambert2
+    2100006: RoboTestModel_0001_RoboTest_AssaultRifle_blinn1
+    2100008: lambert4
+    2300000: RoboTestModel_0001:arm1A
+    2300002: RoboTestModel_0001:arm1A 1
+    2300004: RoboTestModel_0001:arm1B
+    2300006: RoboTestModel_0001:arm1B 1
+    2300008: RoboTestModel_0001:arm2
+    2300010: RoboTestModel_0001:arm2 1
+    2300012: RoboTestModel_0001:armJoint
+    2300014: RoboTestModel_0001:armJoint1
+    2300016: RoboTestModel_0001:ban
+    2300018: RoboTestModel_0001:ban1
+    2300020: RoboTestModel_0001:body
+    2300022: RoboTestModel_0001:elbowA
+    2300024: RoboTestModel_0001:elbowA 1
+    2300026: RoboTestModel_0001:elbowB
+    2300028: RoboTestModel_0001:elbowB 1
+    2300030: RoboTestModel_0001:elbowJoint
+    2300032: RoboTestModel_0001:elbowJoint 1
+    2300034: RoboTestModel_0001:foot
+    2300036: RoboTestModel_0001:foot 1
+    2300038: RoboTestModel_0001:footJointL
+    2300040: RoboTestModel_0001:footJointR
+    2300042: RoboTestModel_0001:hand
+    2300044: RoboTestModel_0001:hand 1
+    2300046: RoboTestModel_0001:handJoint
+    2300048: RoboTestModel_0001:handJoint1
+    2300050: RoboTestModel_0001:head
+    2300052: RoboTestModel_0001:heel
+    2300054: RoboTestModel_0001:heel 1
+    2300056: RoboTestModel_0001:knee
+    2300058: RoboTestModel_0001:knee 1
+    2300060: RoboTestModel_0001:kneeJoint
+    2300062: RoboTestModel_0001:kneeJoint 1
+    2300064: RoboTestModel_0001:leg
+    2300066: RoboTestModel_0001:leg 1
+    2300068: RoboTestModel_0001:pCube1
+    2300070: RoboTestModel_0001:pCylinder1
+    2300072: RoboTestModel_0001:pPipe1
+    2300074: RoboTestModel_0001:pPipe1 1
+    2300076: RoboTestModel_0001:RoboTest:AssaultRifle:RifleAddons
+    2300078: RoboTestModel_0001:RoboTest:AssaultRifle:RifleBody
+    2300080: RoboTestModel_0001:RoboTest:AssaultRifle:RifleGrip
+    2300082: RoboTestModel_0001:shoulderJointA
+    2300084: RoboTestModel_0001:shoulderJointA1
+    2300086: RoboTestModel_0001:shoulderJointB
+    2300088: RoboTestModel_0001:shoulderJointB1
+    2300090: RoboTestModel_0001:shoulderL
+    2300092: RoboTestModel_0001:shoulderR
+    2300094: RoboTestModel_0001:thighJointL
+    2300096: RoboTestModel_0001:thighJointR
+    2300098: RoboTestModel_0001:thighL 1
+    2300100: RoboTestModel_0001:thighR 1
+    3300000: RoboTestModel_0001:arm1A
+    3300002: RoboTestModel_0001:arm1A 1
+    3300004: RoboTestModel_0001:arm1B
+    3300006: RoboTestModel_0001:arm1B 1
+    3300008: RoboTestModel_0001:arm2
+    3300010: RoboTestModel_0001:arm2 1
+    3300012: RoboTestModel_0001:armJoint
+    3300014: RoboTestModel_0001:armJoint1
+    3300016: RoboTestModel_0001:ban
+    3300018: RoboTestModel_0001:ban1
+    3300020: RoboTestModel_0001:body
+    3300022: RoboTestModel_0001:elbowA
+    3300024: RoboTestModel_0001:elbowA 1
+    3300026: RoboTestModel_0001:elbowB
+    3300028: RoboTestModel_0001:elbowB 1
+    3300030: RoboTestModel_0001:elbowJoint
+    3300032: RoboTestModel_0001:elbowJoint 1
+    3300034: RoboTestModel_0001:foot
+    3300036: RoboTestModel_0001:foot 1
+    3300038: RoboTestModel_0001:footJointL
+    3300040: RoboTestModel_0001:footJointR
+    3300042: RoboTestModel_0001:hand
+    3300044: RoboTestModel_0001:hand 1
+    3300046: RoboTestModel_0001:handJoint
+    3300048: RoboTestModel_0001:handJoint1
+    3300050: RoboTestModel_0001:head
+    3300052: RoboTestModel_0001:heel
+    3300054: RoboTestModel_0001:heel 1
+    3300056: RoboTestModel_0001:knee
+    3300058: RoboTestModel_0001:knee 1
+    3300060: RoboTestModel_0001:kneeJoint
+    3300062: RoboTestModel_0001:kneeJoint 1
+    3300064: RoboTestModel_0001:leg
+    3300066: RoboTestModel_0001:leg 1
+    3300068: RoboTestModel_0001:pCube1
+    3300070: RoboTestModel_0001:pCylinder1
+    3300072: RoboTestModel_0001:pPipe1
+    3300074: RoboTestModel_0001:pPipe1 1
+    3300076: RoboTestModel_0001:RoboTest:AssaultRifle:RifleAddons
+    3300078: RoboTestModel_0001:RoboTest:AssaultRifle:RifleBody
+    3300080: RoboTestModel_0001:RoboTest:AssaultRifle:RifleGrip
+    3300082: RoboTestModel_0001:shoulderJointA
+    3300084: RoboTestModel_0001:shoulderJointA1
+    3300086: RoboTestModel_0001:shoulderJointB
+    3300088: RoboTestModel_0001:shoulderJointB1
+    3300090: RoboTestModel_0001:shoulderL
+    3300092: RoboTestModel_0001:shoulderR
+    3300094: RoboTestModel_0001:thighJointL
+    3300096: RoboTestModel_0001:thighJointR
+    3300098: RoboTestModel_0001:thighL 1
+    3300100: RoboTestModel_0001:thighR 1
+    4300000: RoboTestModel_0001:body
+    4300002: RoboTestModel_0001:head
+    4300004: RoboTestModel_0001:pCylinder1
+    4300006: RoboTestModel_0001:ban
+    4300008: RoboTestModel_0001:pPipe1
+    4300010: RoboTestModel_0001:ban1
+    4300012: RoboTestModel_0001:pPipe1
+    4300014: RoboTestModel_0001:pCube1
+    4300016: RoboTestModel_0001:shoulderJointA
+    4300018: RoboTestModel_0001:shoulderL
+    4300020: RoboTestModel_0001:shoulderJointB
+    4300022: RoboTestModel_0001:arm1A
+    4300024: RoboTestModel_0001:armJoint
+    4300026: RoboTestModel_0001:arm1B
+    4300028: RoboTestModel_0001:elbowJoint
+    4300030: RoboTestModel_0001:arm2
+    4300032: RoboTestModel_0001:handJoint
+    4300034: RoboTestModel_0001:hand
+    4300036: RoboTestModel_0001:elbowA
+    4300038: RoboTestModel_0001:elbowB
+    4300040: RoboTestModel_0001:shoulderJointA1
+    4300042: RoboTestModel_0001:shoulderR
+    4300044: RoboTestModel_0001:shoulderJointB1
+    4300046: RoboTestModel_0001:arm1A
+    4300048: RoboTestModel_0001:armJoint1
+    4300050: RoboTestModel_0001:arm1B
+    4300052: RoboTestModel_0001:elbowJoint
+    4300054: RoboTestModel_0001:arm2
+    4300056: RoboTestModel_0001:handJoint1
+    4300058: RoboTestModel_0001:hand
+    4300060: RoboTestModel_0001:RoboTest:AssaultRifle:RifleGrip
+    4300062: RoboTestModel_0001:RoboTest:AssaultRifle:RifleBody
+    4300064: RoboTestModel_0001:RoboTest:AssaultRifle:RifleAddons
+    4300066: RoboTestModel_0001:elbowA
+    4300068: RoboTestModel_0001:elbowB
+    4300070: RoboTestModel_0001:thighJointL
+    4300072: RoboTestModel_0001:thighL
+    4300074: RoboTestModel_0001:kneeJoint
+    4300076: RoboTestModel_0001:leg
+    4300078: RoboTestModel_0001:footJointL
+    4300080: RoboTestModel_0001:foot
+    4300082: RoboTestModel_0001:heel
+    4300084: RoboTestModel_0001:knee
+    4300086: RoboTestModel_0001:thighJointR
+    4300088: RoboTestModel_0001:thighR
+    4300090: RoboTestModel_0001:kneeJoint
+    4300092: RoboTestModel_0001:leg
+    4300094: RoboTestModel_0001:footJointR
+    4300096: RoboTestModel_0001:foot
+    4300098: RoboTestModel_0001:heel
+    4300100: RoboTestModel_0001:knee
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

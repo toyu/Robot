@@ -93,7 +93,7 @@ public class CS_PlayerController : MonoBehaviour {
         //攻撃////////////////////////////////////////////////////////////////////////////////////
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(bullet, transform.position + transform.TransformDirection(1f, 1f, 1f), transform.rotation);
+            Instantiate(bullet, transform.position + transform.TransformDirection(0.75f, 1.75f, 6f), transform.rotation);
         }
 
         //ロックオン////////////////////////////////////////////////////////////////////////////////////

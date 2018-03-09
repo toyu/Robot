@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CS_GameManager : MonoBehaviour {
+    private float playerTime;
     public int enemyNum;
     public GameObject enemy;
 
@@ -31,6 +32,8 @@ public class CS_GameManager : MonoBehaviour {
 
     void clear()
     {
+        playerTime = GameObject.Find("CountUpTimer").GetComponent<CS_CountUpTimer>().timeCounter;
+        this.GetComponent<CS_SaveValue>().SetTime(playerTime);
         GameObject.Find("SceneManager").GetComponent<CS_SceneManager>().LoadScene("Result");
     }
 }
